@@ -809,7 +809,6 @@ section>.main>img {
 
   position: relative;
 
-  background-color: #eee;
 }
 
 .con-5>.title {
@@ -886,7 +885,7 @@ section>.main>img {
 	z-index: 1;
 
 	position: absolute;
-	bottom: 50px;
+	bottom: 100px;
 }
 .con-5 > .tab-box > .tab > .tabnav > li {
 	display: inline-block;
@@ -912,7 +911,7 @@ section>.main>img {
 	height: 97px;
 	color: #000;
 	padding: 0 30px;
-	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+	filter: drop-shadow(-5px 4px 4px rgba(0, 0, 0, 0.2));
 }
 .con-5 > .tab-box > .tab > .tabnav > li > a > .text-box > .hide-box {
 	width: 705px;
@@ -930,13 +929,14 @@ section>.main>img {
 	margin-left: 70px;
 	width: 90px;
 	height: 70px;
-	background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .con-5 > .tab-box > .tab > .tabnav > li > a > .text-box > .hide-box > .text {
 	margin-left: 30px;
-	width: 200px;
-	height: 70px;
-	background-color: green;
+	width: 300px;
+	height: 60px;
 	
 	display:flex;
 	flex-direction:column;
@@ -961,6 +961,7 @@ color: #A2A2A2;
 }
 .con-5 > .tab-box > .tab > .tabnav > li > a.active > .text-box > .hide-box {
 	opacity: 0;
+
 }
 /* .tabnav li a:hover, */
 .con-5 > .tab-box > .tab > .tabnav > li > a.active {
@@ -991,7 +992,6 @@ color: #A2A2A2;
 	/* 	display:block; */
 	width: 400px;
 	height: 210px;
-	background-color: green;
 
 	margin-left: 70px;
 	margin-top: 65px;
@@ -1011,7 +1011,19 @@ color: #A2A2A2;
 .con-5 > .tab-box > .tab > .tabnav > li > a.active > .text-box > .show-box > .top > .logo-box {
 	width: 200px;
 	height: 50px;
-	background-color: #eee;
+
+  display: flex;
+  align-items: center;
+  
+}
+.con-5 > .tab-box > .tab > .tabnav > li > a.active > .text-box > .show-box > .top > .logo-box > img{
+  width: 200px;
+  /* height: 45px; */
+}
+.con-5 > .tab-box > .tab > .tabnav > li > a.active > .text-box > .show-box > .top > .logo-gs > img{
+  width: 72.5513px;
+  height: 45px;
+  object-fit: cover;
 }
 .con-5 > .tab-box > .tab > .tabnav > li > a.active > .text-box > .show-box > .top > p {
 	width: 100%;
@@ -1084,12 +1096,16 @@ color: #A2A2A2;
 	padding: 20px;
 	width: 994px;
 	height: 912px;
-	border: 1px solid #ddd;
 	border-top: none;
 
 	position: absolute;
-	background-color: indigo;
 	right: 0;
+}
+.con-5 > .tab-box > .tab >.tabcontent > div > img{
+  
+	width: 994px;
+	height: 912px;
+  object-fit: cover;
 }
 
 
