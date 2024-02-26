@@ -1684,9 +1684,12 @@ color: #A2A2A2;
 
 /* btn-7 */
 .con-6>.mySwiper3>.swiper-wrapper>.swiper-slide>.text-box>a>.btn-7 {
-  color: #333333;
+  color: #ffffff;
 }
 
+.con-6>.mySwiper3>.swiper-wrapper>.swiper-slide>.text-box>a:hover > .btn-7{
+  color: #333333;
+}
 /* btn-8 */
 .con-6>.mySwiper3>.swiper-wrapper>.swiper-slide>.text-box>a>.btn-8 {
   color: #435665;
