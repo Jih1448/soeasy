@@ -8,6 +8,10 @@ p {
   font-family: "Montserrat";
   font-size: 16px;
   color: #333333;
+
+}
+body{
+  overflow-x: hidden;
 }
 
 a {
@@ -191,13 +195,16 @@ section>.main>img {
 }
 
 .con-2>.box {
-  width: 1330px;
+  width: 1163px;
   height: 611px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 100px;
+
+  position: relative;
+
 }
 
 .con-2>.box>.img-box {
@@ -208,33 +215,41 @@ section>.main>img {
 .con-2>.box>.img-box>img {
   width: 637px;
   height: 611px;
+
 }
 
 .con-2>.box>.text-box {
-  width: 650px;
+  width: 600px;
   height: 292px;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  position: absolute;
+  right: 0px;
+  bottom:80px;
 }
 
 .con-2>.box>.text-box>.txt-1 {
   width: 650px;
   display: flex;
   align-items: center;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 46px;
-  font-family: "Noto Sans KR";
-}
-
-.con-2>.box>.text-box>.txt-1>.color {
-  color: #ffcc15;
-  margin-left: 10px;
   font-weight: 600;
   font-size: 32px;
   line-height: 46px;
+  font-family: "Noto Sans KR";
+
+}
+
+.con-2>.box>.text-box>.txt-1>.color {
+  color: #FE6D01;
+  margin-left: 10px;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 39px;
+  
+  
 }
 
 .con-2>.box>.text-box>.txt-2 {
@@ -243,7 +258,7 @@ section>.main>img {
 }
 
 .con-2>.box>.text-box>.txt-2>p {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 24px;
   line-height: 35px;
   font-family: "Noto Sans KR";
@@ -252,7 +267,7 @@ section>.main>img {
 
 .con-2>.box>.text-box>.txt-2>.txt-2-1 {
   width: 650px;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 24px;
   line-height: 35px;
   font-family: "Noto Sans KR";
@@ -262,7 +277,7 @@ section>.main>img {
 }
 
 .con-2>.box>.text-box>.txt-2>.txt-2-1>p {
-  font-weight: 600;
+  font-weight: 800;
   font-size: 24px;
   line-height: 35px;
   font-family: "Noto Sans KR";
@@ -271,7 +286,7 @@ section>.main>img {
 
 .con-2>.box>.text-box>.txt-2>.line {
   position: absolute;
-  width: 230px;
+  width: 235px;
   height: 11px;
   left: 0;
   bottom: 5px;
@@ -287,7 +302,7 @@ section>.main>img {
 }
 
 .con-2>.box>.text-box>.txt-3>p {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 28px;
   line-height: 41px;
   font-family: "Noto Sans KR";
@@ -296,14 +311,14 @@ section>.main>img {
 }
 
 .con-2>.box>.text-box>.txt-3>.bold {
-  font-weight: 600;
+  font-weight: 700;
   margin-right: 0px;
   z-index: 1;
 }
 
 .con-2>.box>.text-box>.txt-3>.line {
   position: absolute;
-  width: 55px;
+  width: 53px;
   height: 11px;
   left: 0;
   bottom: 5px;
@@ -335,14 +350,25 @@ section>.main>img {
 }
 
 .con-3>.title {
+  z-index: -1;
   position: absolute;
-  top: 250px;
-  left: 100px;
-  width: 366px;
-  height: 152px;
-  z-index: 1;
+  width: 740px;
+  height: 117px;
+  left: 1061px;
+  top: 769px;
+  
+  opacity: 0.4;
+  
 }
+.con-3>.title > p{
 
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 117px;
+  letter-spacing: 0.1em;
+  color: rgba(255, 217, 82, 0.3);
+}
+/* 
 .con-3>.title>.box {
   width: 366px;
   height: 152px;
@@ -375,7 +401,7 @@ section>.main>img {
 }
 
 .con-3>.title>.box>.text-box>p {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 30px;
   line-height: 37px;
   letter-spacing: 0.03em;
@@ -388,7 +414,7 @@ section>.main>img {
   letter-spacing: 0.1em;
 
   color: #f58400;
-}
+} */
 
 .con-3>.box {
   width: 1527px;
@@ -405,7 +431,23 @@ section>.main>img {
 .con-3>.box>.left-box {
   width: 550px;
   height: 530px;
-  background-color: gray;
+  margin-bottom: 100px;
+
+}
+.con-3>.box>.left-box > .bg-circle{
+  width: 550px;
+  height: 530px;
+  border-radius: 50%;
+  background-color: #FFCC15;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  opacity: 80%;
+}
+.con-3>.box>.left-box > img{
+  width: 550px;
+  height: 631px;
+  object-fit: cover;
 }
 
 .con-3>.box>.right-box {
@@ -444,28 +486,37 @@ section>.main>img {
 }
 
 .con-3>.box>.right-box>.top-box>ul>li>p {
-  width: 120px;
+  width: 110px;
   height: 22px;
 
-  font-weight: 600;
+  font-weight: 900;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: -0.04em;
 
-  color: #ff9900;
+  color: #F58400;
 }
 
 .con-3>.box>.right-box>.top-box>ul>li>.txt-box {
-  margin-left: 10px;
+  margin-left: 5px;
+}
+.con-3>.box>.right-box>.top-box>ul>li>.txt-box > p{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.03em;
+  
+  color: #333333;
 }
 
 .con-3>.box>.right-box>.top-box>ul>li>.txt-box>.p1 {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: -0.04em;
 
-  color: rgba(51, 51, 51, 0.5);
+  color: rgba(51, 51, 51, 0.8);
+  margin-bottom: 13px;
 }
 
 .con-3>.box>.right-box>.top-box>ul>li>.txt-box>.p1-1 {
@@ -474,9 +525,10 @@ section>.main>img {
   line-height: 20px;
   letter-spacing: -0.04em;
 
-  color: rgba(51, 51, 51, 0.5);
-
   opacity: 0;
+  color: rgba(51, 51, 51, 0.8);
+  
+  
 }
 
 .con-3>.box>.right-box>.top-box>.right {
@@ -485,10 +537,13 @@ section>.main>img {
 }
 
 .con-3>.box>.right-box>.skill-box {
-  width: 870px;
-  height: 140px;
+  width: 540px;
+  height: 180px;
   margin-bottom: 50px;
+
   display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .con-3>.box>.right-box>.skill-box>p {
@@ -500,23 +555,23 @@ section>.main>img {
   line-height: 22px;
   letter-spacing: -0.04em;
 
-  color: #ff9900;
+  color: #F58400;
 }
 
 .con-3>.box>.right-box>.skill-box>.box {
-  width: 600px;
+  width: 420px;
   height: 140px;
   margin-left: 10px;
 
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  margin-top: 30px;
 }
 
 .con-3>.box>.right-box>.skill-box>.box>.flex {
   width: 600px;
   height: 60px;
-
   display: flex;
 }
 
@@ -524,6 +579,14 @@ section>.main>img {
   width: 60px;
   height: 60px;
   margin-right: 30px;
+}
+.con-3>.box>.right-box>.skill-box>.box>.flex>.skill-img > img{
+  width: 60px;
+  height: 60px;
+}
+
+.con-3>.box>.right-box>.skill-box>.box > .m-t{
+  margin-top: 15px;
 }
 
 /* con-4 */
@@ -832,7 +895,7 @@ section>.main>img {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
-  font-size: 48px;
+  font-size: 45px;
   line-height: 59px;
   letter-spacing: -0.03em;
 
@@ -847,7 +910,7 @@ section>.main>img {
 .con-5>.title>p {
   font-family: "Noto Sans KR";
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 35px;
   letter-spacing: 0.1em;
 
@@ -932,6 +995,8 @@ section>.main>img {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  opacity: 40%;
 }
 .con-5 > .tab-box > .tab > .tabnav > li > a > .text-box > .hide-box > .text {
 	margin-left: 30px;
@@ -949,15 +1014,14 @@ font-family: 'Noto Sans KR';
 font-style: normal;
 font-weight: 500;
 font-size: 24px;
-color: #717171;
-	
+color: #c2c2c2;	
 }
 .con-5 > .tab-box > .tab > .tabnav > li > a > .text-box > .hide-box > .text > p{
 font-family: 'Noto Sans KR';
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
-color: #A2A2A2;
+color: #c4c4c4;
 }
 .con-5 > .tab-box > .tab > .tabnav > li > a.active > .text-box > .hide-box {
 	opacity: 0;
@@ -990,7 +1054,7 @@ color: #A2A2A2;
 }
 .con-5 > .tab-box > .tab > .tabnav > li > a.active > .text-box > .show-box {
 	/* 	display:block; */
-	width: 400px;
+	width: 500px;
 	height: 210px;
 
 	margin-left: 70px;
@@ -1002,11 +1066,12 @@ color: #A2A2A2;
 }
 .con-5 > .tab-box > .tab > .tabnav > li > a.active > .text-box > .show-box > .top {
 	width: 100%;
-	height:110px;
+	height:80px;
 	
 	display: flex;
 	flex-direction:column;
 	justify-content:space-between;
+
 }
 .con-5 > .tab-box > .tab > .tabnav > li > a.active > .text-box > .show-box > .top > .logo-box {
 	width: 200px;
@@ -1021,13 +1086,12 @@ color: #A2A2A2;
   /* height: 45px; */
 }
 .con-5 > .tab-box > .tab > .tabnav > li > a.active > .text-box > .show-box > .top > .logo-gs > img{
-  width: 72.5513px;
-  height: 45px;
+  width: 72px;
+  height: 44px;
   object-fit: cover;
 }
-.con-5 > .tab-box > .tab > .tabnav > li > a.active > .text-box > .show-box > .top > p {
+/* .con-5 > .tab-box > .tab > .tabnav > li > a.active > .text-box > .show-box > .top > p {
 	width: 100%;
-	height: 22px;
 
 	font-family: "Montserrat";
 	font-style: normal;
@@ -1036,7 +1100,7 @@ color: #A2A2A2;
 	letter-spacing: -0.04em;
 
 	color: #333333;
-}
+} */
 .con-5 > .tab-box > .tab > .tabnav > li > a.active > .text-box > .show-box > .top > .teg-box {
 	width: 100%;
 	height: 20px;
@@ -1048,7 +1112,7 @@ color: #A2A2A2;
 	height: 20px;
 	font-family: "Montserrat";
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 600;
 	font-size: 16px;
 	letter-spacing: -0.03em;
 
@@ -1057,21 +1121,25 @@ color: #A2A2A2;
 	margin-right:10px;
 }
 .con-5 > .tab-box > .tab > .tabnav > li > a.active > .text-box > .show-box > .btn {
-	width: 100%;
+	width: 230px;
 	height: 35px;
+
+  display: flex;
+  justify-content: space-between;
+
 }
 .con-5 > .tab-box > .tab > .tabnav > li > a.active > .text-box > .show-box > .btn > button {
 	width: 110px;
 	height: 35px;
 	background-color: #ffd952;
 	border-radius: 20px;
-	border: 1px solid #fff;
+	border: 1px solid #6d2815;
 
 	color: #6d2815;
 
 	font-family: "Montserrat";
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 600;
 	font-size: 16px;
 	letter-spacing: -0.04em;
 }
@@ -1080,6 +1148,7 @@ color: #A2A2A2;
 	color: #fe6d01;
 
 	transition: 0.3s;
+	border: 1px solid #fff;
 }
 .con-5 > .tab-box > .tab > .tabnav > li > a.active > .circle {
 	width: 70px;
@@ -1088,8 +1157,7 @@ color: #A2A2A2;
 	border-radius: 50%;
 
 	position: absolute;
-	right: 60px;
-	top: 0;
+	right: 68px;
 	top: calc(40% - 0px / 2);
 }
 .con-5 > .tab-box > .tab >.tabcontent {
@@ -1133,13 +1201,14 @@ color: #A2A2A2;
   object-fit: cover;
 }
 
-.con-6>.swiper>.swiper-pagination {
+/* .con-6>.swiper>.swiper-pagination {
   position: absolute;
   display: flex;
   text-align: center;
   transition: 0.3s opacity;
   transform: translate3d(0, 0, 0);
   z-index: 10;
+
 
   color: #fff;
   left: 1280px;
@@ -1159,7 +1228,7 @@ color: #A2A2A2;
   background-color: #fff;
   border-radius: 10px;
   width: 50px;
-}
+} */
 
 .con-6>.mySwiper3 {
   width: 500px;
@@ -1707,7 +1776,7 @@ color: #A2A2A2;
 
 .con-6>.swiper>.button {
   width: 200px;
-  height: 50px;
+  height: 52px;
 
   display: flex;
   justify-content: space-between;
@@ -1715,6 +1784,7 @@ color: #A2A2A2;
   position: absolute;
   left: 152px;
   top: 987px;
+
 }
 
 .con-6>.swiper>.button>.swiper-pagination {
@@ -1730,6 +1800,7 @@ color: #A2A2A2;
   border: 1px solid #fff;
   border-radius: 50px;
   color: #fff;
+
 }
 
 .con-6>.swiper>.button>.swiper-button-prev {
@@ -1738,6 +1809,7 @@ color: #A2A2A2;
   border: 1px solid #fff;
   border-radius: 50px;
   color: #fff;
+
 }
 
 .con-6>.swiper>.button>.swiper-button-next::after {
@@ -1761,7 +1833,7 @@ color: #A2A2A2;
 
 .con-7>.txt-box {
   width: 760px;
-  height: 450px;
+  height: 375px;
   position: absolute;
   left: 1100px;
   bottom: 10px;
@@ -1770,6 +1842,7 @@ color: #A2A2A2;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .con-7>.txt-box>.top {
@@ -1786,77 +1859,20 @@ color: #A2A2A2;
   height: 44px;
 }
 
-.con-7>.txt-box>.top>.txt {
-  width: 760px;
-  height: 34px;
-  display: flex;
-  justify-content: center;
-}
-
-.con-7>.txt-box>.top>.txt>p {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 34px;
-}
-
-.con-7>.txt-box>.top>.txt>.bold {
-  font-weight: 600;
-}
-
-.con-7>.txt-box>.top>.txt>.bold-color {
-  font-weight: 700;
-  color: #ff783e;
-}
-
-.con-7>.txt-box>.top>.txt>.margin {
-  margin-right: 3px;
-}
-
 .con-7>.txt-box>.bottom {
   width: 550px;
-  height: 210px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-}
 
-.con-7>.txt-box>.bottom>.txt-box {
-  width: 350px;
-  height: 36px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.con-7>.txt-box>.bottom>.txt-box>.txt01 {
-  width: 300px;
-  height: 30px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.con-7>.txt-box>.bottom>.txt-box>.txt01>p {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 30px;
-}
-
-.con-7>.txt-box>.bottom>.txt-box>.txt01>.color {
-  color: #fe6d01;
-}
-
-.con-7>.txt-box>.bottom>.txt-box>p {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 30px;
+  position: absolute;
+  bottom: 0;
 }
 
 .con-7>.txt-box>.bottom>p {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 12px;
+  line-height: 15px;
 
   color: #fe6d01;
 }
