@@ -875,20 +875,24 @@ section>.main>img {
 }
 
 .con-5>.title {
-  width: 315px;
-  height: 105px;
+  width: 550px;
+  height: 45px;
 
   position: absolute;
   left: 174px;
   top: 231px;
 
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  align-items: end;
   justify-content: space-between;
+
 }
 
 .con-5>.title>.p1 {
   display: flex;
+  height: 45px;
+  align-items: end;
 }
 
 .con-5>.title>.p1>p {
@@ -900,11 +904,13 @@ section>.main>img {
   letter-spacing: -0.03em;
 
   color: #f58400;
+  height: 45px;
 }
 
 .con-5>.title>.p1>.p1-1 {
   margin-left: 5px;
   color: #333333;
+
 }
 
 .con-5>.title>p {
@@ -915,6 +921,8 @@ section>.main>img {
   letter-spacing: 0.1em;
 
   color: #969696;
+
+  height: 29px;
 }
 /* con-5 tab */
 /*tab css*/
