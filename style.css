@@ -868,9 +868,10 @@ section>.main>img {
 /* con-5 */
 .con-5 {
   width: 1920px;
-  height: 1150px;
+  height: 1050px;
 
   position: relative;
+
 
 }
 
@@ -880,7 +881,7 @@ section>.main>img {
 
   position: absolute;
   left: 174px;
-  top: 231px;
+  top: 200px;
 
   display: flex;
   /* flex-direction: column; */
